@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nynorskpaarussisk/static/css/main.22558b8d.chunk.css",
+    "main.js": "/nynorskpaarussisk/static/js/main.5c1fdb80.chunk.js",
+    "main.js.map": "/nynorskpaarussisk/static/js/main.5c1fdb80.chunk.js.map",
+    "runtime-main.js": "/nynorskpaarussisk/static/js/runtime-main.5f9fe02b.js",
+    "runtime-main.js.map": "/nynorskpaarussisk/static/js/runtime-main.5f9fe02b.js.map",
+    "static/js/2.e872eb2b.chunk.js": "/nynorskpaarussisk/static/js/2.e872eb2b.chunk.js",
+    "static/js/2.e872eb2b.chunk.js.map": "/nynorskpaarussisk/static/js/2.e872eb2b.chunk.js.map",
+    "static/js/3.0f3ae584.chunk.js": "/nynorskpaarussisk/static/js/3.0f3ae584.chunk.js",
+    "static/js/3.0f3ae584.chunk.js.map": "/nynorskpaarussisk/static/js/3.0f3ae584.chunk.js.map",
+    "index.html": "/nynorskpaarussisk/index.html",
+    "static/css/main.22558b8d.chunk.css.map": "/nynorskpaarussisk/static/css/main.22558b8d.chunk.css.map",
+    "static/js/2.e872eb2b.chunk.js.LICENSE.txt": "/nynorskpaarussisk/static/js/2.e872eb2b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f9fe02b.js",
+    "static/js/2.e872eb2b.chunk.js",
+    "static/css/main.22558b8d.chunk.css",
+    "static/js/main.5c1fdb80.chunk.js"
+  ]
+}
