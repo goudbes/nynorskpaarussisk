@@ -1,0 +1,67 @@
+.rule-header h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.rule-box {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    padding: 0 15px 15px 15px;
+}
+
+.rule-box p {
+    text-align: justify;
+}
+
+.rule-header {
+    color: white;
+    background-color: black;
+    text-align: left;
+    padding-left: 10px;
+}
+
+p.eksempel, span.eksempel {
+    font-style: italic;
+}
+
+.emphasis {
+    font-weight: 500;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+/**************
+Book reference
+***************/
+
+p #title {
+    font-style: italic;
+    text-decoration: underline;
+    color: lightseagreen
+}
+
+p #year {
+    color: lightslategray;
+}
+
+.quote::before {
+    content: open-quote;
+}
+
+.quote::after {
+    content: close-quote;
+}
+
+.quote {
+    quotes: "“" "”" "‘" "’";
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    table {
+        word-break: break-word;
+    }
+  }

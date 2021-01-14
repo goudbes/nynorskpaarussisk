@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+
+.header-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: calc(10px + 4.5vmin);
+  margin: auto;
+  margin-top: 2%;
+  padding: 15px;
+  width: 80%;
+}
+
+.logo {
+  margin-top: 1%;
+  width: calc(60px + 8vmin);
+  border-radius: 100px / 120px;
+  opacity: 0.8;
+}
