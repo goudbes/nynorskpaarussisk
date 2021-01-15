@@ -57,9 +57,8 @@
 }
 
 .nynorsk {
-  font: bold calc(16px + 3.5vmin) arial, serif;
+  font-size: calc(16px + 3.5vmin);
   font-family: 'Great Vibes', cursive;  
   font-weight: 200;
-  color: #787878
-  
+  color: #787878  
 }
