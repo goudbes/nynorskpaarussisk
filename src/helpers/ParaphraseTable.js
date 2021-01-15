@@ -8,11 +8,11 @@ import TableRow from '@material-ui/core/TableRow';
 
 
 
-function createDataConjugation(indefiniteSingular, definiteSingular, indefinitePlural, definitePlural) {
-    return { indefiniteSingular, definiteSingular, indefinitePlural, definitePlural };
+function createParaphraseData(bm, nn) {
+    return { bm, nn};
 }
 
-const conjugationTableStyles = {
+const paraphraseTableStyles = {
     tableHead: {
         backgroundColor: "#eaeaea"
     }
@@ -23,22 +23,20 @@ class ConjugationTable extends React.Component {
     render() {
         return (
             <Table aria-label={this.props.aria}>
-                <TableHead style={conjugationTableStyles}>
+                <TableHead style={paraphraseTableStyles}>
                     <TableRow>
                         {this.props.headers.map((value, i) => { return <TableCell key={i}>{value}</TableCell> })}
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {this.props.data.map(value => Array.isArray(value) ? createDataConjugation(...value) : value).map((value, i) => (
+                    {this.props.data.map(value => Array.isArray(value) ? createParaphraseData(...value) : value).map((value, i) => (
                         <TableRow key={i}>
                             <TableCell component="th" scope="row">
-                                {value.indefiniteSingular}
+                                {value.bm}
                             </TableCell>
-                            <TableCell >
-                                {value.definiteSingular}
+                            <TableCell align="left" >
+                                {value.nn}
                             </TableCell>
-                            <TableCell align="left">{value.indefinitePlural}</TableCell>
-                            <TableCell align="left">{value.definitePlural}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

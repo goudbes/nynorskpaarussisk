@@ -2,32 +2,27 @@ import React from 'react'
 import '../stylesheets/box.css'
 import ReactTooltip from 'react-tooltip';
 import ConjugationTable from '../helpers/ConjugationTable'
-
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-
-function createData(bokmaal, nynorsk) {
-    return { bokmaal, nynorsk };
-}
+import ParaphraseTable from '../helpers/ParaphraseTable'
 
 const paraphrase = [
-    createData('Karis hus', 'huset som Kari bur i'),
-    createData('klubbens spillere', 'dei spelarane som høyrer til klubben'),
-    createData('etter mors død', 'etter at mora var død'),
+    ['Karis hus', 'huset som Kari bur i'],
+    ['klubbens spillere', 'dei spelarane som høyrer til klubben'],
+    ['etter mors død', 'etter at mora var død'],
+];
+
+const paraphraseHeaders = [
+    <span data-tip="Букмол">Bokmål</span>, <span data-tip="Новонорвежский">Nynorsk</span>
 ];
 
 const feminineWords = [
     [ 'ei sol', 'sola', 'soler', 'solene' ],
     [ 'ei hytte', 'hytta', 'hytter', 'hyttene' ],
-    [ 'ei fil', 'fila', 'filer', 'filane' ],
+    [ 'ei fil', 'fila', 'filer', 'filene' ],
 ];
 
 const masculineWords = [
     ['ein kjærleik', 'kjærleiken', 'kjærleikar', 'kjærleikane'],
-    ['ein fridom', 'fridommen', 'fridommar', 'fridommane'],
+    ['ein fridom', 'fridomen', 'fridomar', 'fridomane'],
     ['ein augeblink', 'augeblinken', 'augeblinkar', 'augeblinkane'],
 ];
 
@@ -39,8 +34,8 @@ const neuterWords = [
 
 
 const conjugationHeaders = [
-    <span data-tip="Ubunden form, eintal">Неопределенная форма, ед. число</span>, <span data-tip="Bunden form, eintal">Определенная форма, ед. число</span>,
-    <span data-tip="Ubunden form, fleirtal">Неопределенная форма, мн. число</span>, <span data-tip="Bunden form, fleirtal">Определенная форма, мн. число</span>
+    <span data-tip="Неопределенная форма, ед. число">Ubunden form, eintal</span>, <span data-tip="Определенная форма, ед. число">Bunden form, eintal</span>,
+    <span data-tip="Неопределенная форма, мн. число">Ubunden form, fleirtal</span>, <span data-tip="Определенная форма, мн. число">Bunden form, fleirtal</span>
 ];
 
 
@@ -90,27 +85,12 @@ class Substantiv extends React.Component {
                         <li key="4">C помощью парафраза</li>
                         <br></br>
                     </ul>
-                    <Table aria-label="simple table">
-                            <TableHead style={{ backgroundColor: "#eaeaea" }}>
-                                <TableRow>
-                                    <TableCell>Букмол</TableCell>
-                                    <TableCell align="left">Новонорвежский</TableCell>
-                                </TableRow>
-                            </TableHead>
-                            <TableBody>
-                                {paraphrase.map((p, index) => (
-                                    <TableRow key={`${p.bokmaal}:${index}`}>
-                                        <TableCell component="th" scope="row">
-                                            {p.bokmaal}
-                                        </TableCell>
-                                        <TableCell align="left">{p.nynorsk}</TableCell>
-                                    </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
+                    <ParaphraseTable headers={paraphraseHeaders} data={paraphrase} aria="paraphrase"></ParaphraseTable>
+
+                    
 
 
-                    <h4>2.4 Грамматический род  </h4>
+                    <h4>2.4 Грамматический род (Genus)  </h4>
                     <p>Как и во многих диалектах, имена существительные в новонорвежском делятся на три рода: мужской (hankjønn, m), женский (hokjønn, f) и средний (inkjekjønn, n). Сокращения обозначают
                         maskulinum (m), femininum (f) и nøytrum (n). </p>
                     <p>Примеры существительных женского рода с неопределенным арктиклем <span className="emphasis">ei</span>: </p>
@@ -128,7 +108,7 @@ class Substantiv extends React.Component {
                     <p> В приведённом ниже примере существительное <span data-tip="входная дверь"><i>ytterdøra</i></span> в определенной форме имеет определенный артикль <span className="emphasis">-a</span> в качестве окончания,
                       а перед неопределенным существительным <span data-tip="грохот"><i>brak</i></span> используется арктикль <span className="emphasis">eit</span>.
                        </p>
-                    <p className="eksempel"><span className="quote">Ytterdøra vår small så det rista i heile huset, og så følgde eit frykteleg brak og roping.</span> (Maria Parr <span id="title">Keeperen og havet</span> 7 <span id="year">2017</span>)</p>
+                    <p className="eksempel book-quote"><span className="quote">Ytterdøra vår small så det rista i heile huset, og så følgde eit frykteleg brak og roping.</span> (Maria Parr <span id="title">Keeperen og havet</span> 7 <span id="year">2017</span>)</p>
 
                     <p>Некоторые существительные бывают одновременно мужского и женского рода, а некоторые, например <span className="eksempel" data-tip="вилы">ein/eit/ei greip</span>,
                    имеют форму всех родов - женского, мужского и среднего. Поэтому лучше всего приучить себя активно пользоваться словарем и пытаться запомнить грамматический род.
@@ -154,7 +134,6 @@ class Substantiv extends React.Component {
                     <h4>2.7 Склонение существительных среднего рода  </h4>
 
                     <ConjugationTable headers={conjugationHeaders} data={neuterWords} aria="Neuter conjugation"></ConjugationTable>
-
                 </div >
             </>
         );
