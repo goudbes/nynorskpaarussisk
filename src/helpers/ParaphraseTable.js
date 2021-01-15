@@ -9,7 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 
 
 function createParaphraseData(bm, nn) {
-    return { bm, nn};
+    return { bm, nn };
 }
 
 const paraphraseTableStyles = {

@@ -26,34 +26,34 @@ const rows = [
 class Ordklassar extends React.Component {
     render() {
         return (
-                <>
+            <>
                 <div className="rule-header" id="ordklassar">
                     <h2>1 Части речи (Ordklassar) </h2>
                 </div>
                 <div className="rule-box">
-                <p>Слова в норвежском языке распределяются по категориям или группам, в зависимости от их морфологических, синтаксических и семантических признаков. В таблице ниже
+                    <p>Слова в норвежском языке распределяются по категориям или группам, в зависимости от их морфологических, синтаксических и семантических признаков. В таблице ниже
                     представлены основые части речи в норвежском языке. </p>
-                <Table aria-label="simple table">
-                    <TableHead style={{ backgroundColor: "#eaeaea" }}>
-                        <TableRow>
-                            <TableCell>Часть речи</TableCell>
-                            <TableCell align="left">Часть речи на норвежском</TableCell>
-                            <TableCell align="left">Примеры</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {rows.map((row) => (
-                            <TableRow key={row.ordklasse_nn}>
-                                <TableCell component="th" scope="row">
-                                    {row.ordklasse_ru}
-                                </TableCell>
-                                <TableCell align="left">{row.ordklasse_nn}</TableCell>
-                                <TableCell align="left">{row.eksempel}</TableCell>
+                    <Table aria-label="simple table">
+                        <TableHead style={{ backgroundColor: "#eaeaea" }}>
+                            <TableRow>
+                                <TableCell>Часть речи</TableCell>
+                                <TableCell align="left">Часть речи на норвежском</TableCell>
+                                <TableCell align="left">Примеры</TableCell>
                             </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </div>
+                        </TableHead>
+                        <TableBody>
+                            {rows.map((row) => (
+                                <TableRow key={row.ordklasse_nn}>
+                                    <TableCell component="th" scope="row">
+                                        {row.ordklasse_ru}
+                                    </TableCell>
+                                    <TableCell align="left">{row.ordklasse_nn}</TableCell>
+                                    <TableCell align="left">{row.eksempel}</TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </div>
             </>
         );
     }

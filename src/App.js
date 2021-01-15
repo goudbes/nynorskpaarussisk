@@ -16,6 +16,7 @@ function App() {
       <Menu></Menu>
       <Grid item xs={12} className="header" >
           <h1 className="header-title">Краткая грамматика<br></br> новонорвежского</h1>
+          <h2 className="nynorsk">Nynorsk på russisk</h2>
         </Grid>
       <Grid direction="row" container 
         justify="center"
