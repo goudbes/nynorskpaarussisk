@@ -17,13 +17,13 @@ function App() {
       <Grid direction="row" container 
         justify="center"
         alignItems="baseline" spacing={3} alignContent="center" style={padding}>
-        <Grid item xs={12} sm={12} md={4} lg={4}>
+        <Grid item xs={12} sm={12} md={8} lg={8}>
           <Paper elevation={3}  square><Ordklasser /></Paper>
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4}>
+        <Grid item xs={12} sm={12} md={8} lg={8}>
           <Paper elevation={3} square><Substantiv /></Paper>
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4}>
+        <Grid item xs={12} sm={12} md={8} lg={8}>
           <Paper elevation={3} square><Adverb /></Paper>
         </Grid>
       </Grid>

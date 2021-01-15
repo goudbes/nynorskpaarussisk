@@ -38,6 +38,28 @@ const conjugationHeaders = [
     <span data-tip="Неопределенная форма, мн. число">Ubunden form, fleirtal</span>, <span data-tip="Определенная форма, мн. число">Bunden form, fleirtal</span>
 ];
 
+const feminineWordsOnIng = [
+    ['ei meining', 'meininga', 'meiningar','meiningane'],
+    ['ei undervising', 'undervisinga', 'undervisingar', 'undervisingane']
+]
+
+const feminineWordsOptional = [
+    ['ei elv', 'elva', 'elvar/elver','elvane/elvene'],
+    ['ei hei', 'heia', 'heiar/heier', 'heiane/heiene']
+]
+
+const feminineWordsUmlaut = [
+    ['ei and', 'anda', 'ender','endene'],
+    ['ei bok', 'boka', 'bøker', 'bøkene'],
+    ['ei dotter', 'dottera', 'døtrer', 'døtrene'],
+    ['ei mor', 'mora', 'mødrer', 'mødrene'],
+    ['ei mus', 'musa', 'mus/myser', 'musene/mysene'],
+]
+
+const feminineForeign = [
+    ['ei madonna', 'madonnaa', 'madonnaer','madonnaene'],
+    ['ei diva', 'divaa', 'divaer', 'divaene'],
+]
 
 
 
@@ -83,7 +105,6 @@ class Substantiv extends React.Component {
                         <li key="3">С помощью притяжательных местоимений </li>
                         <p className="eksempel"><span data-tip="мясное рагу матери">kjøtgryta hennar mor</span>, <span data-tip="лошадь отца">hesten hans far</span>, <span data-tip="дом Кари">Kari sitt hus</span></p>
                         <li key="4">C помощью парафраза</li>
-                        <br></br>
                     </ul>
                     <ParaphraseTable headers={paraphraseHeaders} data={paraphrase} aria="paraphrase"></ParaphraseTable>
 
@@ -115,24 +136,43 @@ class Substantiv extends React.Component {
                     </p>
 
                     <h4>2.5 Склонение существительных женского рода  </h4>
-                    <p>Большинство существительных женского рода склоняются согласно приведенным ниже правилам:</p>
-                    <ul style={{ listStyleType: "decimal" }}>
-                        <li key="h1">К существительному в определенной форме единственного числа добавляется окончание <span className="emphasis">-a</span></li>
-                        <li key="h2">К существительному в неопределенной форме множественного числа добавляется окончание <span className="emphasis">-er</span></li>
-                        <li key="h3">К существительному в определенной форме множественного числа добавляется окончание <span className="emphasis">-ene</span></li>
-                    </ul>
-
+                    <p>К большинству существительных женского рода добавляется окончание <span className="emphasis">-a</span> в определенной форме единственного числа, окончание <span className="emphasis">-er </span>
+                     в неопределенной форме множественного числа и окончание <span className="emphasis">-ene</span> в определенной форме множественного числа.</p>
 
                     <ConjugationTable className="conjugation" headers={conjugationHeaders} data={feminineWords} aria="Feminine conjugation"></ConjugationTable>
+
+                    <h4>2.5.1 Существительные женского рода с окончанием -ing</h4>
+                    <p>К существительные женского рода с окончанием <span className="emphasis">-ing</span> добавляются окончания <span className="emphasis">-ar</span> и <span className="emphasis">-ane </span>
+                    во множественном числе.</p>
+
+                    <ConjugationTable className="conjugation" headers={conjugationHeaders} data={feminineWordsOnIng} aria="Feminine conjugation on -ing"></ConjugationTable>
+
+                    <h4>2.5.2 Разносклоняемые существительные женского рода </h4>
+                    <p>Группа существительных женского рода с традиционными окончаниями <span className="emphasis">-ar</span> и <span className="emphasis">-ane </span> во множественном числе,
+                    которые также разрешается склонять с окончаниями <span className="emphasis">-er</span> и <span className="emphasis">-ene </span>.</p>
+
+                    <ConjugationTable className="conjugation" headers={conjugationHeaders} data={feminineWordsOptional} aria="Feminine optional"></ConjugationTable>
+
+                    <h4>2.5.3 Cуществительные женского рода c умлаутом</h4>
+                    <p>Обширная группа существительных женского рода с умлаутом  <span className="emphasis">a&rarr;e, o&rarr;e, o&rarr;ø, u&rarr;y, å&rarr;æ  </span> имеет окончания
+                    <span className="emphasis"> -er</span> и <span className="emphasis">-ene </span> во множественном числе.</p>
+
+                    <ConjugationTable className="conjugation" headers={conjugationHeaders} data={feminineWordsUmlaut} aria="Feminine omlyd"></ConjugationTable>
+
+                    <h4>2.5.3 Заимствованные существительные женского рода обозначающие женщин</h4>
+                    <p>К заимствованным существительным женского рода обозначающих женщин, добавляется окончание <span className="emphasis">-aa</span> в неопределенной форме единственного числа.
+                    </p>
+
+                    <ConjugationTable className="conjugation" headers={conjugationHeaders} data={feminineForeign} aria="Feminine foreign"></ConjugationTable>
                     
-
-
                     <h4>2.6 Склонение существительных мужского рода  </h4>
-
+                    <p>К большинству существительных мужского рода добавляется окончание <span className="emphasis">-en</span> в определенной форме единственного числа, окончание <span className="emphasis">-ar </span>
+                     в неопределенной форме множественного числа и окончание <span className="emphasis">-ane</span> в определенной форме множественного числа.</p>
                     <ConjugationTable headers={conjugationHeaders} data={masculineWords} aria="Masculine conjugation"></ConjugationTable>
                     
                     <h4>2.7 Склонение существительных среднего рода  </h4>
-
+                    <p>Ко всем существительным среднего рода добавляется окончание <span className="emphasis">-et</span> в определенной форме единственного числа и окончание <span className="emphasis">-a </span>
+                    в определенной форме множественного числа. Неопределенная форма множественного числа остается без изменений.</p> 
                     <ConjugationTable headers={conjugationHeaders} data={neuterWords} aria="Neuter conjugation"></ConjugationTable>
                 </div >
             </>

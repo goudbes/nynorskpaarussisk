@@ -23,7 +23,7 @@ class ConjugationTable extends React.Component {
     render() {
         return (
             <Table aria-label={this.props.aria}>
-                <TableHead style={conjugationTableStyles}>
+                <TableHead style={conjugationTableStyles.tableHead}>
                     <TableRow>
                         {this.props.headers.map((value, i) => { return <TableCell key={i}>{value}</TableCell> })}
                     </TableRow>
