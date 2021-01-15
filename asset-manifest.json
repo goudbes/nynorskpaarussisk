@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nynorskpaarussisk/static/css/main.1f685d38.chunk.css",
+    "main.css": "/nynorskpaarussisk/static/css/main.cfac40eb.chunk.css",
     "main.js": "/nynorskpaarussisk/static/js/main.d4756a42.chunk.js",
     "main.js.map": "/nynorskpaarussisk/static/js/main.d4756a42.chunk.js.map",
     "runtime-main.js": "/nynorskpaarussisk/static/js/runtime-main.d068621b.js",
@@ -10,13 +10,13 @@
     "static/js/3.7c1cfeda.chunk.js": "/nynorskpaarussisk/static/js/3.7c1cfeda.chunk.js",
     "static/js/3.7c1cfeda.chunk.js.map": "/nynorskpaarussisk/static/js/3.7c1cfeda.chunk.js.map",
     "index.html": "/nynorskpaarussisk/index.html",
-    "static/css/main.1f685d38.chunk.css.map": "/nynorskpaarussisk/static/css/main.1f685d38.chunk.css.map",
+    "static/css/main.cfac40eb.chunk.css.map": "/nynorskpaarussisk/static/css/main.cfac40eb.chunk.css.map",
     "static/js/2.238a0dee.chunk.js.LICENSE.txt": "/nynorskpaarussisk/static/js/2.238a0dee.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d068621b.js",
     "static/js/2.238a0dee.chunk.js",
-    "static/css/main.1f685d38.chunk.css",
+    "static/css/main.cfac40eb.chunk.css",
     "static/js/main.d4756a42.chunk.js"
   ]
 }
