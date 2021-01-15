@@ -151,21 +151,20 @@ export default function PersistentDrawerLeft() {
                     </IconButton>
                 </div>
                 <Divider />
-                <List>
+                <List><HashLink className="hash-link" key={'home'} smooth to={`#home`}>
                     <ListItem button key={'home'}><HomeIcon style={{ marginRight: "10px", color: '#c0c0c0' }} />
-                        <HashLink className="hash-link" key={'home'} smooth to={`#home`}>
                             <ListItemText primary={'В начало'} />
-                        </HashLink>
                     </ListItem>
+                    </HashLink>
                     <Divider />
                     <Router>
                         {Object.entries(ordklassar).map(([key, value]) => (
-                            <ListItem button key={'k' + key}>
-                                <BookIcon fontSize="small" style={{ marginRight: "10px", color: '#c0c0c0' }} />
-                                <HashLink className="hash-link" key={'k' + key} smooth to={`#${key}`}>
+                            <HashLink className="hash-link" key={'k' + key} smooth to={`#${key}`}>
+                                <ListItem button key={'k' + key}>
+                                    <BookIcon fontSize="small" style={{ marginRight: "10px", color: '#c0c0c0' }} />
                                     <ListItemText primary={value} />
-                                </HashLink>
-                            </ListItem>
+                                </ListItem>
+                            </HashLink>
                         ))}
                     </Router>
                 </List>

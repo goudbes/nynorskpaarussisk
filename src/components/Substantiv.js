@@ -159,8 +159,8 @@ class Substantiv extends React.Component {
 
                     <ConjugationTable className="conjugation" headers={conjugationHeaders} data={feminineWordsUmlaut} aria="Feminine omlyd"></ConjugationTable>
 
-                    <h4>2.5.3 Заимствованные существительные женского рода обозначающие женщин</h4>
-                    <p>К заимствованным существительным женского рода обозначающих женщин, добавляется окончание <span className="emphasis">-aa</span> в неопределенной форме единственного числа.
+                    <h4>2.5.3 Заимствованные существительные женского рода, называющие лиц женского пола</h4>
+                    <p>К этой группе существительных добавляется окончание <span className="emphasis">-aa</span> в неопределенной форме единственного числа.
                     </p>
 
                     <ConjugationTable className="conjugation" headers={conjugationHeaders} data={feminineForeign} aria="Feminine foreign"></ConjugationTable>
