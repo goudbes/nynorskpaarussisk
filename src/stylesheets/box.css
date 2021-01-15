@@ -33,6 +33,16 @@ table {
     width: 100%;
 }
 
+.hash-link {
+    text-decoration: none;
+}
+
+.hash-link:focus, .hash-link:hover, .hash-link:visited, .hash-link:link, .hash-link:active {
+    text-decoration: none;
+    color:inherit
+}
+
+
 /**************
 Book reference
 ***************/

@@ -1,8 +1,9 @@
 import './App.css';
 import { Grid, Paper } from '@material-ui/core';
-import Ordklasser from './components/Ordklasser'
+import Ordklassar from './components/Ordklassar'
 import Substantiv from './components/Substantiv'
-import Adverb from './components/Adverb'
+import Menu from './interface/Menu'
+import { BrowserRouter } from 'react-router-dom'
 
 const padding = {
   padding: "10px"
@@ -10,7 +11,9 @@ const padding = {
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
+      <Menu></Menu>
       <Grid item xs={12} className="header" >
           <h1 className="header-title">Краткая грамматика<br></br> новонорвежского</h1>
         </Grid>
@@ -18,16 +21,14 @@ function App() {
         justify="center"
         alignItems="baseline" spacing={3} alignContent="center" style={padding}>
         <Grid item xs={12} sm={12} md={8} lg={8}>
-          <Paper elevation={3}  square><Ordklasser /></Paper>
+          <Paper elevation={3}  square><Ordklassar /></Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={8} lg={8}>
           <Paper elevation={3} square><Substantiv /></Paper>
         </Grid>
-        <Grid item xs={12} sm={12} md={8} lg={8}>
-          <Paper elevation={3} square><Adverb /></Paper>
-        </Grid>
       </Grid>
     </div>
+    </BrowserRouter>
   );
 }
 

@@ -23,11 +23,11 @@ const rows = [
     createData('Подчинительный союз', 'Subjunksjon', 'dersom, fordi, viss, som'),
     createData('Междометие', 'Interjeksjon', 'hurra!, uff, ja, nei, hallo'),];
 
-class Ordklasser extends React.Component {
+class Ordklassar extends React.Component {
     render() {
         return (
                 <>
-                <div className="rule-header">
+                <div className="rule-header" id="ordklassar">
                     <h2>1 Части речи (Ordklassar) </h2>
                 </div>
                 <div className="rule-box">
@@ -59,4 +59,4 @@ class Ordklasser extends React.Component {
     }
 }
 
-export default Ordklasser
+export default Ordklassar

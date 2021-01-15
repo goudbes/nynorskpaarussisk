@@ -6,8 +6,7 @@ class Adverb extends React.Component {
     render() {
         return (
             <div>
-
-                <div className="rule-header">
+                <div className="rule-header" id="adverb">
                     <h2>7 Наречие </h2>
                 </div>
                 <div className="rule-box">

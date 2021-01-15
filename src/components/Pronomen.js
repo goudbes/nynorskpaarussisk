@@ -6,8 +6,7 @@ class Pronomen extends React.Component {
     render() {
         return (
             <div>
-
-                <div className="rule-header">
+                <div className="rule-header" id="pronomen">
                     <h2>2 Местоимение </h2>
                 </div>
                 <div className="rule-box">

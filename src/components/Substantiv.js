@@ -67,8 +67,8 @@ class Substantiv extends React.Component {
     render() {
         return (
             <><ReactTooltip />
-                <div className="rule-header">
-                    <h2>2 Существительное (Substantiv)</h2>
+                <div className="rule-header" id="substantiv">
+                <h2>2 Существительное (Substantiv)</h2>
                 </div>
                 <div className="rule-box">
                     <p>Слова, которые служат названием предмета и отвечают на вопрос <i>"кто?"</i> или <i>"что?"</i>, называются именами существительными. </p>
