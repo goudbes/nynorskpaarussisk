@@ -15,6 +15,8 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { HashLink } from 'react-router-hash-link';
+import BookIcon from '@material-ui/icons/Book';
+import HomeIcon from '@material-ui/icons/Home';
 import {
     BrowserRouter as Router,
 } from 'react-router-dom';
@@ -34,7 +36,7 @@ const ordklassar = {
     interjeksjon: 'Междометие',
 }
 
-const drawerWidth = 240;
+const drawerWidth = 270;
 
 
 const useStyles = makeStyles((theme) => ({
@@ -113,7 +115,7 @@ export default function PersistentDrawerLeft() {
     return (
         <div className={classes.root}>
             <CssBaseline />
-            <AppBar 
+            <AppBar
                 position="fixed"
                 className={clsx(classes.appBar, {
                     [classes.appBarShift]: open,
@@ -150,11 +152,18 @@ export default function PersistentDrawerLeft() {
                 </div>
                 <Divider />
                 <List>
+                    <ListItem button key={'home'}><HomeIcon style={{ marginRight: "10px", color: '#c0c0c0' }} />
+                        <HashLink className="hash-link" key={'home'} smooth to={`#home`}>
+                            <ListItemText primary={'В начало'} />
+                        </HashLink>
+                    </ListItem>
+                    <Divider />
                     <Router>
                         {Object.entries(ordklassar).map(([key, value]) => (
                             <ListItem button key={'k' + key}>
+                                <BookIcon fontSize="small" style={{ marginRight: "10px", color: '#c0c0c0' }} />
                                 <HashLink className="hash-link" key={'k' + key} smooth to={`#${key}`}>
-                               <ListItemText primary={value} />
+                                    <ListItemText primary={value} />
                                 </HashLink>
                             </ListItem>
                         ))}

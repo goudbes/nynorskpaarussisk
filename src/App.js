@@ -12,7 +12,7 @@ const padding = {
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
+    <div className="App" id="home">
       <Menu></Menu>
       <Grid item xs={12} className="header" >
           <h1 className="header-title">Краткая грамматика<br></br> новонорвежского</h1>
