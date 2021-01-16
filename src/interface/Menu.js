@@ -17,6 +17,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { HashLink } from 'react-router-hash-link';
 import BookIcon from '@material-ui/icons/Book';
 import HomeIcon from '@material-ui/icons/Home';
+import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import {
     BrowserRouter as Router,
 } from 'react-router-dom';
@@ -113,70 +114,76 @@ export default function PersistentDrawerLeft() {
         setOpen(false);
     };
 
+    const handleClickAway = () => {
+        handleDrawerClose();
+      };
+
     return (
-        <div className={classes.root}>
-            <CssBaseline />
-            <AppBar
-                position="fixed"
-                className={clsx(classes.appBar, {
-                    [classes.appBarShift]: open,
-                })}
-            >
-                <Toolbar>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        onClick={handleDrawerOpen}
-                        edge="start"
-                        className={clsx(classes.menuButton, open && classes.hide)}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" noWrap>
+        <ClickAwayListener onClickAway={handleClickAway}>
+            <div className={classes.root}>
+                <CssBaseline />
+                <AppBar
+                    position="fixed"
+                    className={clsx(classes.appBar, {
+                        [classes.appBarShift]: open,
+                    })}
+                >
+                    <Toolbar>
+                        <IconButton
+                            color="inherit"
+                            aria-label="open drawer"
+                            onClick={handleDrawerOpen}
+                            edge="start"
+                            className={clsx(classes.menuButton, open && classes.hide)}
+                        >
+                            <MenuIcon />
+                        </IconButton>
+                        <Typography variant="h6" noWrap>
 
-                    </Typography>
-                </Toolbar>
-            </AppBar>
-            <Drawer
-                className={classes.drawer}
-                variant="persistent"
-                anchor="left"
-                open={open}
-                classes={{
-                    paper: classes.drawerPaper,
-                }}
-            >
-                <div className={classes.drawerHeader}>
-                    <IconButton onClick={handleDrawerClose}>
-                        {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-                    </IconButton>
-                </div>
-                <Divider />
-                <List><HashLink className="hash-link" key={'home'} smooth to={`#home`}>
-                    <ListItem button key={'home'}><HomeIcon style={{ marginRight: "10px", color: '#c0c0c0' }} />
-                            <ListItemText primary={'В начало'} />
-                    </ListItem>
-                    </HashLink>
+                        </Typography>
+                    </Toolbar>
+                </AppBar>
+                <Drawer
+                    className={classes.drawer}
+                    variant="persistent"
+                    anchor="left"
+                    open={open}
+                    classes={{
+                        paper: classes.drawerPaper,
+                    }}
+                >
+                    <div className={classes.drawerHeader}>
+                        <IconButton onClick={handleDrawerClose}>
+                            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+                        </IconButton>
+                    </div>
                     <Divider />
-                    <Router>
-                        {Object.entries(ordklassar).map(([key, value]) => (
-                            <HashLink className="hash-link" key={'k' + key} smooth to={`#${key}`}>
-                                <ListItem button key={'k' + key}>
-                                    <BookIcon fontSize="small" style={{ marginRight: "10px", color: '#c0c0c0' }} />
-                                    <ListItemText primary={value} />
-                                </ListItem>
-                            </HashLink>
-                        ))}
-                    </Router>
-                </List>
-            </Drawer>
-            <main
-                className={clsx(classes.content, {
-                    [classes.contentShift]: open,
-                })}
-            >
+                    <List><HashLink className="hash-link" key={'home'} smooth to={`#home`}>
+                        <ListItem button key={'home'}><HomeIcon style={{ marginRight: "10px", color: '#c0c0c0' }} />
+                            <ListItemText primary={'В начало'} />
+                        </ListItem>
+                    </HashLink>
+                        <Divider />
+                        <Router>
+                            {Object.entries(ordklassar).map(([key, value]) => (
+                                <HashLink className="hash-link" key={'k' + key} smooth to={`#${key}`}>
+                                    <ListItem button key={'k' + key}>
+                                        <BookIcon fontSize="small" style={{ marginRight: "10px", color: '#c0c0c0' }} />
+                                        <ListItemText primary={value} />
+                                    </ListItem>
+                                </HashLink>
+                            ))}
+                        </Router>
+                    </List>
+                </Drawer>
+                <main
+                    className={clsx(classes.content, {
+                        [classes.contentShift]: open,
+                    })}
+                >
 
-            </main>
-        </div>
+                </main>
+            </div>
+        </ClickAwayListener>
     );
 }

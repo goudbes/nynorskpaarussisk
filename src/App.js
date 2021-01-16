@@ -20,7 +20,7 @@ function App() {
         </Grid>
       <Grid direction="row" container 
         justify="center"
-        alignItems="baseline" spacing={3} alignContent="center" style={padding}>
+        alignItems="baseline" spacing={0} alignContent="center" style={padding}>
         <Grid item xs={12} sm={12} md={8} lg={8}>
           <Paper elevation={3}  square><Ordklassar /></Paper>
         </Grid>
