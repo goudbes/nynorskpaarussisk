@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/nynorskpaarussisk/static/css/main.d01aec4e.chunk.css",
-    "main.js": "/nynorskpaarussisk/static/js/main.42dfe6f7.chunk.js",
-    "main.js.map": "/nynorskpaarussisk/static/js/main.42dfe6f7.chunk.js.map",
+    "main.css": "/nynorskpaarussisk/static/css/main.fb113511.chunk.css",
+    "main.js": "/nynorskpaarussisk/static/js/main.ce11c6bb.chunk.js",
+    "main.js.map": "/nynorskpaarussisk/static/js/main.ce11c6bb.chunk.js.map",
     "runtime-main.js": "/nynorskpaarussisk/static/js/runtime-main.0f7f6d8c.js",
     "runtime-main.js.map": "/nynorskpaarussisk/static/js/runtime-main.0f7f6d8c.js.map",
     "static/js/2.09a4a04e.chunk.js": "/nynorskpaarussisk/static/js/2.09a4a04e.chunk.js",
@@ -10,13 +10,15 @@
     "static/js/3.6245dcef.chunk.js": "/nynorskpaarussisk/static/js/3.6245dcef.chunk.js",
     "static/js/3.6245dcef.chunk.js.map": "/nynorskpaarussisk/static/js/3.6245dcef.chunk.js.map",
     "index.html": "/nynorskpaarussisk/index.html",
-    "static/css/main.d01aec4e.chunk.css.map": "/nynorskpaarussisk/static/css/main.d01aec4e.chunk.css.map",
-    "static/js/2.09a4a04e.chunk.js.LICENSE.txt": "/nynorskpaarussisk/static/js/2.09a4a04e.chunk.js.LICENSE.txt"
+    "static/css/main.fb113511.chunk.css.map": "/nynorskpaarussisk/static/css/main.fb113511.chunk.css.map",
+    "static/js/2.09a4a04e.chunk.js.LICENSE.txt": "/nynorskpaarussisk/static/js/2.09a4a04e.chunk.js.LICENSE.txt",
+    "static/media/ivaraasenmain.2d53dec5.png": "/nynorskpaarussisk/static/media/ivaraasenmain.2d53dec5.png",
+    "static/media/nn.ea775a5e.png": "/nynorskpaarussisk/static/media/nn.ea775a5e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0f7f6d8c.js",
     "static/js/2.09a4a04e.chunk.js",
-    "static/css/main.d01aec4e.chunk.css",
-    "static/js/main.42dfe6f7.chunk.js"
+    "static/css/main.fb113511.chunk.css",
+    "static/js/main.ce11c6bb.chunk.js"
   ]
 }
