@@ -31,6 +31,7 @@ const ordklassar = {
     verb: 'Глагол',
     adjektiv: 'Прилагательное',
     adverb: 'Наречие',
+    preposisjon: 'Предлог',
     konjunksjon: 'Сочинительный союз',
     subjunksjon: 'Подчинительный союз',
     interjeksjon: 'Междометие',

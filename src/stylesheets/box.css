@@ -76,7 +76,7 @@ p #year {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     table {
         word-break: break-word;
         overflow-wrap:break-word;

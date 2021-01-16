@@ -59,6 +59,8 @@ const feminineWordsUmlaut = [
 const feminineForeign = [
     ['ei madonna', 'madonnaa', 'madonnaer','madonnaene'],
     ['ei diva', 'divaa', 'divaer', 'divaene'],
+    ['ei ballerina', 'ballerinaa', 'ballerinaer', 'ballerinaene'],
+    ['ei tsarina', 'tsarinaa', 'tsarinaer', 'tsarinaene'],
 ]
 
 

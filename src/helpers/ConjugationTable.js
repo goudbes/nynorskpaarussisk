@@ -22,7 +22,7 @@ const conjugationTableStyles = {
 class ConjugationTable extends React.Component {
     render() {
         return (
-            <Table aria-label={this.props.aria}>
+            <Table size="small" aria-label={this.props.aria}>
                 <TableHead style={conjugationTableStyles.tableHead}>
                     <TableRow>
                         {this.props.headers.map((value, i) => { return <TableCell key={i}>{value}</TableCell> })}

@@ -7,21 +7,21 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
-function createData(ordklasse_ru, ordklasse_nn, eksempel) {
-    return { ordklasse_ru, ordklasse_nn, eksempel };
+function createData(ordklasse_nn, eksempel) {
+    return { ordklasse_nn, eksempel };
 }
 
 const rows = [
-    createData('Существительное', 'Substantiv', 'ei sol, ei jente, eit bord, ein godhug'),
-    createData('Местоимение', 'Pronomen', 'ho, han, eg, kven, kvarandre'),
-    createData('Детерминатив', 'Determinativ', 'ei, eit, ein, dette, desse, mi, mine'),
-    createData('Глагол', 'Verb', 'å eta, å bu, å draga, å gløyma'),
-    createData('Прилагательное', 'Adjektiv', 'fin, stor, varm, vakker, raud'),
-    createData('Наречие', 'Adverb', 'her, ute, derfor, dessutan, kanskje, sikkert, ikkje'),
-    createData('Предлог', 'Preposisjon', 'på, i, hjå, under, bakanfor, attanfor'),
-    createData('Сочинительный союз', 'Konjunksjon', 'men, eller, for, og'),
-    createData('Подчинительный союз', 'Subjunksjon', 'dersom, fordi, viss, som'),
-    createData('Междометие', 'Interjeksjon', 'hurra!, uff, ja, nei, hallo'),];
+    createData(<span data-tip="Существительное">Substantiv</span>, 'ei sol, ei jente, eit bord, ein godhug'),
+    createData(<span data-tip="Местоимение">Pronomen</span>, 'ho, han, eg, kven, kvarandre'),
+    createData(<span data-tip="Детерминатив">Determinativ</span>, 'ei, eit, ein, dette, desse, mi, mine'),
+    createData(<span data-tip="Глагол">Verb</span>, 'å eta, å bu, å draga, å gløyma'),
+    createData(<span data-tip="Прилагательное">Adjektiv</span>, 'fin, stor, varm, vakker, raud'),
+    createData(<span data-tip="Наречие">Adverb</span>, 'her, ute, derfor, dessutan, kanskje, sikkert, ikkje'),
+    createData(<span data-tip="Предлог">Preposisjon</span>, 'på, i, hjå, under, bakanfor, attanfor'),
+    createData(<span data-tip="Сочинительный союз">Konjunksjon</span>, 'men, eller, for, og'),
+    createData(<span data-tip="Подчинительный союз">Subjunksjon</span>, 'dersom, fordi, viss, som'),
+    createData(<span data-tip="Междометие">Interjeksjon</span>, 'hurra!, uff, ja, nei, hallo'),];
 
 class Ordklassar extends React.Component {
     render() {
@@ -37,17 +37,15 @@ class Ordklassar extends React.Component {
                         <TableHead style={{ backgroundColor: "#eaeaea" }}>
                             <TableRow>
                                 <TableCell>Часть речи</TableCell>
-                                <TableCell align="left">Часть речи на норвежском</TableCell>
                                 <TableCell align="left">Примеры</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {rows.map((row) => (
-                                <TableRow key={row.ordklasse_nn}>
+                            {rows.map((row, i) => (
+                                <TableRow key={i}>
                                     <TableCell component="th" scope="row">
-                                        {row.ordklasse_ru}
+                                        {row.ordklasse_nn}
                                     </TableCell>
-                                    <TableCell align="left">{row.ordklasse_nn}</TableCell>
                                     <TableCell align="left">{row.eksempel}</TableCell>
                                 </TableRow>
                             ))}
