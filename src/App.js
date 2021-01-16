@@ -5,6 +5,9 @@ import Substantiv from './components/Substantiv'
 import Menu from './interface/Menu'
 import { BrowserRouter } from 'react-router-dom'
 
+import logo from './images/ivaraasenmain.png';
+import ornament from './images/nn.png';
+
 const padding = {
   padding: "10px"
 }
@@ -16,7 +19,8 @@ function App() {
       <Menu></Menu>
       <Grid item xs={12} className="header" >
           <h1 className="header-title">Краткая грамматика<br></br> новонорвежского</h1>
-          <h2 className="nynorsk">Nynorsk på russisk</h2>
+          <img className="ivar-logo" alt="ivar aasen" src={logo}></img><br></br>
+          <img className="ornament" alt="ornament" src={ornament}></img>
         </Grid>
       <Grid direction="row" container 
         justify="center"
