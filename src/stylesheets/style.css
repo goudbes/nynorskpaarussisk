@@ -56,6 +56,15 @@ blockquote {
     padding-left: 10px;
 }
 
+.hash-link {
+    text-decoration: none;
+}
+
+.hash-link:focus, .hash-link:hover, .hash-link:visited, .hash-link:link, .hash-link:active {
+    text-decoration: none;
+    color:inherit
+}
+
 @media only screen and (max-width: 1000px) {
     table {
         word-break: break-word;

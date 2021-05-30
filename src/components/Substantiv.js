@@ -19,7 +19,7 @@ class Substantiv extends React.Component {
         const { markdown } = this.state;
         return (
             <div>
-                <div className="rule-header" id="ordklassar">
+                <div className="rule-header" id="substantiv">
                     <h2>2 Существительное (Substantiv) </h2>
                 </div>
                 <div className="rule-box">
