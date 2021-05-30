@@ -15,24 +15,24 @@ const padding = {
 function App() {
   return (
     <BrowserRouter>
-    <div className="App" id="home">
-      <Menu></Menu>
-      <Grid item xs={12} className="header" >
+      <div className="App" id="home">
+        <Menu></Menu>
+        <Grid item xs={12} className="header" >
           <h1 className="header-title">Краткая грамматика<br></br> новонорвежского</h1>
           <img className="ivar-logo" alt="ivar aasen" src={logo}></img><br></br>
           <img className="ornament" alt="ornament" src={ornament}></img>
         </Grid>
-      <Grid direction="row" container 
-        justify="center"
-        alignItems="baseline" spacing={0} alignContent="center" style={padding}>
-        <Grid item xs={12} sm={12} md={8} lg={8}>
-          <Paper elevation={3}  square><Ordklassar /></Paper>
+        <Grid direction="row" container
+          justify="center"
+          alignItems="baseline" spacing={0} alignContent="center" style={padding}>
+          <Grid item xs={12} sm={12} md={8} lg={8}>
+            <Paper elevation={3} square><Ordklassar /></Paper>
+          </Grid>
+          <Grid item xs={12} sm={12} md={8} lg={8}>
+            <Paper elevation={3} square><Substantiv /></Paper>
+          </Grid>
         </Grid>
-        <Grid item xs={12} sm={12} md={8} lg={8}>
-          <Paper elevation={3} square><Substantiv /></Paper>
-        </Grid>
-      </Grid>
-    </div>
+      </div>
     </BrowserRouter>
   );
 }

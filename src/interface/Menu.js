@@ -22,7 +22,7 @@ import {
     BrowserRouter as Router,
 } from 'react-router-dom';
 
-import '../stylesheets/box.css'
+import '../stylesheets/style.css'
 
 const ordklassar = {
     ordklassar: 'Части речи',
@@ -116,7 +116,7 @@ export default function PersistentDrawerLeft() {
 
     const handleClickAway = () => {
         handleDrawerClose();
-      };
+    };
 
     return (
         <ClickAwayListener onClickAway={handleClickAway}>
