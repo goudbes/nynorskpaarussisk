@@ -1,3 +1,15 @@
+/********** Color Codes ******/
+/* Gainsboro
+/* Lightgray
+/* Silver
+/* DarkGray
+/* Gray
+/* DimGray
+/* LightSlateGray
+/* SlateGray
+/* DarkSlateGray
+******************************/
+
 .rule-header h2 {
     font-family: 'Playfair Display', serif;
     font-size: calc(14px + 0.5vmin);
@@ -27,7 +39,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #eaeaea;
+    border: 1px solid Gainsboro;
     border-collapse: collapse;
     border-right: none;
     border-left: none;
@@ -41,19 +53,28 @@ table, th, td {
 }
 
 thead, tr, th {
-    font-weight: 500;
+    font-weight: 600;
     color: rgba(0, 0, 0, 0.87);
     line-height: 1.5rem;
     padding: 14px;
 }
 
 thead {
-    background-color: #eaeaea;
+    background-color: Gainsboro;
 }
 
 blockquote {
-    border-left: 2px solid #949494;
-    padding-left: 10px;
+    /*border-left: 3px solid lightslategray;*/
+    padding: 10px;
+    background-color: white;
+    background-image: url("../images/quote02.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+blockquote p {
+    padding: 5px;
+    margin-left: 25px;
 }
 
 .hash-link {
@@ -63,6 +84,13 @@ blockquote {
 .hash-link:focus, .hash-link:hover, .hash-link:visited, .hash-link:link, .hash-link:active {
     text-decoration: none;
     color:inherit
+}
+
+/* Citation style */
+span.cite{
+    color: LightSlateGray;
+    display: block;
+    text-align: right;
 }
 
 @media only screen and (max-width: 1000px) {

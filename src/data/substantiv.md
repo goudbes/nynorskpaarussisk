@@ -66,7 +66,7 @@
 
 В приведённом ниже примере существительное ytterdøra в определенной форме имеет определенный артикль -a в качестве окончания, а перед неопределенным существительным brak используется арктикль **eit**.
 
-> *Ytterdøra vår small så det rista i heile huset, og så følgde eit frykteleg brak og roping. (Maria Parr <u>Keeperen og havet</u> 7 2017)*
+> *Ytterdøra vår small så det rista i heile huset, og så følgde eit frykteleg brak og roping. <span class="cite">(Maria Parr <u>Keeperen og havet</u> 7 2017)</span>*
 
 Некоторые существительные бывают одновременно мужского и женского рода, а некоторые, например ein/eit/ei greip, имеют форму всех родов - женского, мужского и среднего. Поэтому лучше всего приучить себя активно пользоваться словарем и пытаться запомнить грамматический род.
 
