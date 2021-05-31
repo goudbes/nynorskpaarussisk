@@ -15,8 +15,8 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { HashLink } from 'react-router-hash-link';
-import BookIcon from '@material-ui/icons/Book';
 import HomeIcon from '@material-ui/icons/Home';
+import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import {
     BrowserRouter as Router,
@@ -179,7 +179,7 @@ export default function PersistentDrawerLeft() {
                             {Object.entries(ordklassar).map(([key, value]) => (
                                 <HashLink className="hash-link" key={'k' + key} smooth to={`#${key}`}>
                                     <ListItem className={classes.menuItem} button key={'k' + key}>
-                                        <BookIcon fontSize="small" style={{ marginRight: "10px", color: '#c0c0c0' }} />
+                                        <BookmarkBorderIcon fontSize="default" style={{ marginRight: "10px", color: '#c0c0c0' }} />
                                         <ListItemText primary={value} />
                                     </ListItem>
                                 </HashLink>
