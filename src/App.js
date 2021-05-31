@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import logo from './images/ivaraasenmain01.png';
 import ornament from './images/nn01.png';
+import Interjeksjon from './components/Interjeksjon';
 
 const padding = {
   padding: "10px"
@@ -30,6 +31,9 @@ function App() {
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
             <Paper elevation={3} square><Substantiv /></Paper>
+          </Grid>
+          <Grid item xs={12} sm={12} md={8} lg={8}>
+            <Paper elevation={3} square><Interjeksjon /></Paper>
           </Grid>
         </Grid>
       </div>
