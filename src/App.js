@@ -5,8 +5,8 @@ import Substantiv from './components/Substantiv'
 import Menu from './interface/Menu'
 import { BrowserRouter } from 'react-router-dom'
 
-import logo from './images/ivaraasenmain.png';
-import ornament from './images/nn.png';
+import logo from './images/ivaraasenmain01.png';
+import ornament from './images/nn01.png';
 
 const padding = {
   padding: "10px"

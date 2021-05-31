@@ -20,7 +20,7 @@ class Substantiv extends React.Component {
         return (
             <div>
                 <div className="rule-header" id="substantiv">
-                    <h2>2 Существительное (Substantiv) </h2>
+                    <h2>&sect; 2 Существительное (Substantiv) </h2>
                 </div>
                 <div className="rule-box">
                     <Markdown >{markdown}</Markdown>

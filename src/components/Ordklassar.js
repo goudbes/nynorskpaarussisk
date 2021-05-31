@@ -20,7 +20,7 @@ class Ordklassar extends React.Component {
         return (
             <div>
                 <div className="rule-header" id="ordklassar">
-                    <h2>1 Части речи </h2>
+                    <h2>&sect; 1 Части речи (Ordklassar) </h2>
                 </div>
                 <div className="rule-box">
                     <Markdown >{markdown}</Markdown>

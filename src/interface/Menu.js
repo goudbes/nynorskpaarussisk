@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
-        backgroundColor: 'rgba(0,0,0,0.3)',
+        backgroundColor: 'rgba(47,79,79,0.3)',
         boxShadow: 'none'
     },
     appBarShift: {
@@ -98,6 +98,17 @@ const useStyles = makeStyles((theme) => ({
         }),
         marginLeft: 0,
     },
+    menuItem: {
+        background: "inherit",
+        '&:active': {
+           background: "DarkSlateGray",
+           color: "white",
+        },
+         '&:hover': {
+            background: "DarkSlateGray",
+            color: "white",
+         },
+      },
 }));
 
 
@@ -167,7 +178,7 @@ export default function PersistentDrawerLeft() {
                         <Router>
                             {Object.entries(ordklassar).map(([key, value]) => (
                                 <HashLink className="hash-link" key={'k' + key} smooth to={`#${key}`}>
-                                    <ListItem button key={'k' + key}>
+                                    <ListItem className={classes.menuItem} button key={'k' + key}>
                                         <BookIcon fontSize="small" style={{ marginRight: "10px", color: '#c0c0c0' }} />
                                         <ListItemText primary={value} />
                                     </ListItem>
