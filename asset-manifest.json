@@ -1,27 +1,28 @@
 {
   "files": {
     "main.css": "/nynorskpaarussisk/static/css/main.4f7674d7.chunk.css",
-    "main.js": "/nynorskpaarussisk/static/js/main.736667c3.chunk.js",
-    "main.js.map": "/nynorskpaarussisk/static/js/main.736667c3.chunk.js.map",
+    "main.js": "/nynorskpaarussisk/static/js/main.e405c3ad.chunk.js",
+    "main.js.map": "/nynorskpaarussisk/static/js/main.e405c3ad.chunk.js.map",
     "runtime-main.js": "/nynorskpaarussisk/static/js/runtime-main.5fd9a684.js",
     "runtime-main.js.map": "/nynorskpaarussisk/static/js/runtime-main.5fd9a684.js.map",
-    "static/js/2.8a861ae8.chunk.js": "/nynorskpaarussisk/static/js/2.8a861ae8.chunk.js",
-    "static/js/2.8a861ae8.chunk.js.map": "/nynorskpaarussisk/static/js/2.8a861ae8.chunk.js.map",
+    "static/js/2.133d2d65.chunk.js": "/nynorskpaarussisk/static/js/2.133d2d65.chunk.js",
+    "static/js/2.133d2d65.chunk.js.map": "/nynorskpaarussisk/static/js/2.133d2d65.chunk.js.map",
     "static/js/3.fb88ca91.chunk.js": "/nynorskpaarussisk/static/js/3.fb88ca91.chunk.js",
     "static/js/3.fb88ca91.chunk.js.map": "/nynorskpaarussisk/static/js/3.fb88ca91.chunk.js.map",
     "index.html": "/nynorskpaarussisk/index.html",
     "static/css/main.4f7674d7.chunk.css.map": "/nynorskpaarussisk/static/css/main.4f7674d7.chunk.css.map",
-    "static/js/2.8a861ae8.chunk.js.LICENSE.txt": "/nynorskpaarussisk/static/js/2.8a861ae8.chunk.js.LICENSE.txt",
+    "static/js/2.133d2d65.chunk.js.LICENSE.txt": "/nynorskpaarussisk/static/js/2.133d2d65.chunk.js.LICENSE.txt",
+    "static/media/interjeksjon.c7271d10.md": "/nynorskpaarussisk/static/media/interjeksjon.c7271d10.md",
     "static/media/ivaraasenmain01.e9c79293.png": "/nynorskpaarussisk/static/media/ivaraasenmain01.e9c79293.png",
     "static/media/nn01.ad17c7d2.png": "/nynorskpaarussisk/static/media/nn01.ad17c7d2.png",
     "static/media/ordklassar.5c4af5de.md": "/nynorskpaarussisk/static/media/ordklassar.5c4af5de.md",
     "static/media/style.css": "/nynorskpaarussisk/static/media/quote01.6b3b139d.png",
-    "static/media/substantiv.0684031f.md": "/nynorskpaarussisk/static/media/substantiv.0684031f.md"
+    "static/media/substantiv.2c7ccf66.md": "/nynorskpaarussisk/static/media/substantiv.2c7ccf66.md"
   },
   "entrypoints": [
     "static/js/runtime-main.5fd9a684.js",
-    "static/js/2.8a861ae8.chunk.js",
+    "static/js/2.133d2d65.chunk.js",
     "static/css/main.4f7674d7.chunk.css",
-    "static/js/main.736667c3.chunk.js"
+    "static/js/main.e405c3ad.chunk.js"
   ]
 }
