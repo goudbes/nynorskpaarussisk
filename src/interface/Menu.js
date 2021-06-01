@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
-        backgroundColor: 'rgba(47,79,79,0.3)',
+        backgroundColor: 'rgba(77,88,99,0.3)',
         boxShadow: 'none'
     },
     appBarShift: {
@@ -101,11 +101,11 @@ const useStyles = makeStyles((theme) => ({
     menuItem: {
         background: "inherit",
         '&:active': {
-           background: "DarkSlateGray",
+           background: "lightslategray",
            color: "white",
         },
          '&:hover': {
-            background: "DarkSlateGray",
+            background: "lightslategray",
             color: "white",
          },
       },

@@ -28,7 +28,7 @@
 
 .rule-header {
     color: white;
-    background-color: darkslategray;
+    background-color: lightslategray;
     text-align: left;
     padding-left: 25px;
 }
@@ -90,7 +90,7 @@ blockquote p {
 
 /* Citation style */
 span.cite{
-    color: darkslategray;
+    color: lightslategrey;
     display: block;
     text-align: right;
 }

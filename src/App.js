@@ -5,9 +5,10 @@ import Substantiv from './components/Substantiv'
 import Menu from './interface/Menu'
 import { BrowserRouter } from 'react-router-dom'
 
-import logo from './images/ivaraasenmain01.png';
-import ornament from './images/nn01.png';
+import logo from './images/ivaraasenmain.png';
+import ornament from './images/nn.png';
 import Interjeksjon from './components/Interjeksjon';
+import Pronomen from './components/Pronomen';
 
 const padding = {
   padding: "10px"
@@ -31,6 +32,9 @@ function App() {
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
             <Paper elevation={3} square><Substantiv /></Paper>
+          </Grid>
+          <Grid item xs={12} sm={12} md={8} lg={8}>
+            <Paper elevation={3} square><Pronomen /></Paper>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
             <Paper elevation={3} square><Interjeksjon /></Paper>
