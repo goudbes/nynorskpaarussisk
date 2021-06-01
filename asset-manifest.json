@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/nynorskpaarussisk/static/css/main.4f7674d7.chunk.css",
-    "main.js": "/nynorskpaarussisk/static/js/main.e405c3ad.chunk.js",
-    "main.js.map": "/nynorskpaarussisk/static/js/main.e405c3ad.chunk.js.map",
+    "main.css": "/nynorskpaarussisk/static/css/main.938e6891.chunk.css",
+    "main.js": "/nynorskpaarussisk/static/js/main.adc1c1fb.chunk.js",
+    "main.js.map": "/nynorskpaarussisk/static/js/main.adc1c1fb.chunk.js.map",
     "runtime-main.js": "/nynorskpaarussisk/static/js/runtime-main.5fd9a684.js",
     "runtime-main.js.map": "/nynorskpaarussisk/static/js/runtime-main.5fd9a684.js.map",
-    "static/js/2.133d2d65.chunk.js": "/nynorskpaarussisk/static/js/2.133d2d65.chunk.js",
-    "static/js/2.133d2d65.chunk.js.map": "/nynorskpaarussisk/static/js/2.133d2d65.chunk.js.map",
+    "static/js/2.99df87cf.chunk.js": "/nynorskpaarussisk/static/js/2.99df87cf.chunk.js",
+    "static/js/2.99df87cf.chunk.js.map": "/nynorskpaarussisk/static/js/2.99df87cf.chunk.js.map",
     "static/js/3.fb88ca91.chunk.js": "/nynorskpaarussisk/static/js/3.fb88ca91.chunk.js",
     "static/js/3.fb88ca91.chunk.js.map": "/nynorskpaarussisk/static/js/3.fb88ca91.chunk.js.map",
     "index.html": "/nynorskpaarussisk/index.html",
-    "static/css/main.4f7674d7.chunk.css.map": "/nynorskpaarussisk/static/css/main.4f7674d7.chunk.css.map",
-    "static/js/2.133d2d65.chunk.js.LICENSE.txt": "/nynorskpaarussisk/static/js/2.133d2d65.chunk.js.LICENSE.txt",
-    "static/media/interjeksjon.c7271d10.md": "/nynorskpaarussisk/static/media/interjeksjon.c7271d10.md",
-    "static/media/ivaraasenmain01.e9c79293.png": "/nynorskpaarussisk/static/media/ivaraasenmain01.e9c79293.png",
-    "static/media/nn01.ad17c7d2.png": "/nynorskpaarussisk/static/media/nn01.ad17c7d2.png",
-    "static/media/ordklassar.5c4af5de.md": "/nynorskpaarussisk/static/media/ordklassar.5c4af5de.md",
+    "static/css/main.938e6891.chunk.css.map": "/nynorskpaarussisk/static/css/main.938e6891.chunk.css.map",
+    "static/js/2.99df87cf.chunk.js.LICENSE.txt": "/nynorskpaarussisk/static/js/2.99df87cf.chunk.js.LICENSE.txt",
+    "static/media/interjeksjon.185ac6e5.md": "/nynorskpaarussisk/static/media/interjeksjon.185ac6e5.md",
+    "static/media/ivaraasenmain.2d53dec5.png": "/nynorskpaarussisk/static/media/ivaraasenmain.2d53dec5.png",
+    "static/media/nn.ea775a5e.png": "/nynorskpaarussisk/static/media/nn.ea775a5e.png",
+    "static/media/ordklassar.49a1b240.md": "/nynorskpaarussisk/static/media/ordklassar.49a1b240.md",
+    "static/media/pronomen.5d5aaf7d.md": "/nynorskpaarussisk/static/media/pronomen.5d5aaf7d.md",
     "static/media/style.css": "/nynorskpaarussisk/static/media/quote01.6b3b139d.png",
     "static/media/substantiv.2c7ccf66.md": "/nynorskpaarussisk/static/media/substantiv.2c7ccf66.md"
   },
   "entrypoints": [
     "static/js/runtime-main.5fd9a684.js",
-    "static/js/2.133d2d65.chunk.js",
-    "static/css/main.4f7674d7.chunk.css",
-    "static/js/main.e405c3ad.chunk.js"
+    "static/js/2.99df87cf.chunk.js",
+    "static/css/main.938e6891.chunk.css",
+    "static/js/main.adc1c1fb.chunk.js"
   ]
 }
