@@ -1,5 +1,5 @@
 # Nynorsk på russisk 
-## Norwegian mini grammar for russian speakers
+## Norwegian mini grammar for Russian speakers
 
 It is not always easy to find Norwegian (Nynorsk) grammar for English speakers, and it is even harder when one neither speaks nor understands English. My project aims at helping native Russian speakers to improve their knowledge of Nynorsk by providing them with grammar rules explained in Russian. 
 
