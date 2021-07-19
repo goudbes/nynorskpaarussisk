@@ -20,7 +20,7 @@ class Interjeksjon extends React.Component {
         return (
             <div>
                 <div className="rule-header" id="interjeksjon">
-                    <h2>&sect; 11 Междометие (Interjekson) </h2>
+                    <h2>&sect; 11 Междометие (Interjeksjon) </h2>
                 </div>
                 <div className="rule-box">
                     <Markdown >{markdown}</Markdown>

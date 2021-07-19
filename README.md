@@ -14,3 +14,8 @@ Website is built using React. The grammar rules are classified as parts of speec
 
 ### Usage 
 `npm run start`
+
+### Current state
+
+Parts of speech added: substantiv, pronomen, interjeksjon.
+Parts of speech yet to be added: determinativ, verb, adjektiv, adverb, preposisjon, konjunksjon, subjunksjon. 
